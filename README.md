@@ -184,6 +184,38 @@ The model classifies **20 disease classes** across **6 crop types**:
 Input Image → Resize (224×224) → RGB Float [0,1] → ImageNet Normalize → TFLite Inference → Softmax → Top-1 Prediction
 ```
 
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/home.jpeg" alt="Home Screen" width="220">
+  &nbsp;&nbsp;
+  <img src="screenshots/model.jpeg" alt="Disease Detection" width="220">
+  &nbsp;&nbsp;
+  <img src="screenshots/chatbot.jpeg" alt="AI Chatbot" width="220">
+</p>
+
+<p align="center">
+  <em>Home Dashboard</em>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <em>Disease Detection Result</em>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <em>AI Plant Assistant</em>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="screenshots/wheather1.jpeg" alt="Weather Forecast" width="220">
+  &nbsp;&nbsp;
+  <img src="screenshots/weather2.jpeg" alt="Weather Details" width="220">
+</p>
+
+<p align="center">
+  <em>Weather Forecast</em>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <em>Weather Details</em>
+</p>
+
 ---
 
 ## Getting Started
@@ -203,8 +235,8 @@ Ensure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/<your-username>/plant-disease-prediction.git
-   cd plant-disease-prediction
+    git clone https://github.com/Ahmer-2004/Plant-Disease-Prediction-App.git
+    cd Plant-Disease-Prediction-App
    ```
 
 2. **Install dependencies**
@@ -277,6 +309,13 @@ plant-disease-prediction/
 │   │   └── src/main/
 │   │       └── AndroidManifest.xml  # Permissions & app metadata
 │   └── build.gradle              # Project-level Gradle config
+│
+├── screenshots/                  # App screenshots for README
+│   ├── home.jpeg                 # Home dashboard
+│   ├── model.jpeg                # Disease detection result
+│   ├── chatbot.jpeg              # AI chatbot interface
+│   ├── wheather1.jpeg            # Weather forecast
+│   └── weather2.jpeg             # Weather details
 │
 ├── .env.example                  # Environment variables template
 ├── .gitignore                    # Git ignore rules
