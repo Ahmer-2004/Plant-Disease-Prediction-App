@@ -43,7 +43,7 @@
 
 ## Overview
 
-**Plant Disease Prediction** is a Flutter-based mobile application that leverages deep learning and generative AI to help farmers, gardeners, and agricultural professionals detect plant diseases from leaf images in real-time. The app uses an on-device MobileNetV3-Small TFLite model for instant offline inference, Google Gemini AI for expert chatbot guidance, and live weather data to provide actionable agricultural insights.
+**Plant Disease Prediction** is a Flutter-based mobile application that leverages deep learning and generative AI to help farmers, gardeners, and agricultural professionals detect plant diseases from leaf images in real-time. The app uses an on-device ResNet-18 TFLite model for instant offline inference, Google Gemini AI for expert chatbot guidance, and live weather data to provide actionable agricultural insights.
 
 > **Why this matters:** Crop diseases cause an estimated 20–40% loss in global agricultural production annually. Early detection is critical, and this app puts that power directly in users' hands — no internet required for disease detection.
 
@@ -53,7 +53,7 @@
 
 ### 🔬 AI Disease Detection
 - **On-device inference** using TensorFlow Lite — works offline
-- **MobileNetV3-Small** architecture optimized for mobile (2.5 MB model)
+- **ResNet-18** architecture optimized for mobile (2.5 MB model)
 - **20 disease classes** across 6 major crops
 - **~95% validation accuracy** on the test dataset
 - **Plant verification** using Google ML Kit to filter non-plant images before inference
@@ -164,7 +164,7 @@ The model classifies **20 disease classes** across **6 crop types**:
 
 | Property | Value |
 |----------|-------|
-| **Architecture** | MobileNetV3-Small |
+| **Architecture** | ResNet-18 |
 | **Framework** | PyTorch → ONNX → TensorFlow → TFLite |
 | **Input Size** | 224 × 224 × 3 (RGB) |
 | **Input Format** | Float32, ImageNet Normalized |
@@ -298,7 +298,7 @@ plant-disease-prediction/
 │
 ├── assets/
 │   ├── models/
-│   │   └── model.tflite          # TFLite model (MobileNetV3-Small)
+│   │   └── model.tflite          # TFLite model (ResNet-18)
 │   ├── images/
 │   │   └── app_logo.png          # Application logo
 │   └── animations/               # Lottie animation files
@@ -428,7 +428,7 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 - **[Open-Meteo](https://open-meteo.com/)** — Free weather API
 - **[OpenStreetMap / Nominatim](https://nominatim.org/)** — Reverse geocoding
 - **[Google ML Kit](https://developers.google.com/ml-kit)** — Image labeling
-- **[MobileNetV3](https://arxiv.org/abs/1905.02244)** — Efficient CNN architecture
+- **[ResNet-18](https://arxiv.org/abs/1512.03385)** — Deep residual learning framework
 - **[PlantVillage Dataset](https://github.com/spMohanty/PlantVillage-Dataset)** — Training data foundation
 
 ---
