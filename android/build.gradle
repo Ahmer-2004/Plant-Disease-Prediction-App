@@ -1,0 +1,22 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+
+subprojects {
+    // Only redirect :app build output to the shared build dir.
+    // Plugin subprojects keep default build dirs to avoid
+    // "different roots" errors when pub cache is on a different drive.
+    if (project.name == "app") {
+        project.buildDir = "${rootProject.buildDir}/${project.name}"
+    }
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

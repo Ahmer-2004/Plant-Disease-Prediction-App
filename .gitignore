@@ -1,0 +1,136 @@
+# ═══════════════════════════════════════════════════════════════
+#  Plant Disease Prediction — .gitignore
+# ═══════════════════════════════════════════════════════════════
+
+# ─── Environment & Secrets ────────────────────────────────────
+.env
+.env.local
+.env.production
+*.keystore
+*.jks
+key.properties
+
+# ─── Miscellaneous ────────────────────────────────────────────
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+Thumbs.db
+desktop.ini
+
+# ─── IntelliJ / Android Studio ───────────────────────────────
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# ─── VS Code ─────────────────────────────────────────────────
+# Uncomment if you prefer not to share VS Code settings
+# .vscode/
+
+# ─── Flutter / Dart / Pub ────────────────────────────────────
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+pubspec.lock
+
+# ─── Symbolication ───────────────────────────────────────────
+app.*.symbols
+
+# ─── Obfuscation ─────────────────────────────────────────────
+app.*.map.json
+
+# ─── Android ─────────────────────────────────────────────
+/android/app/debug
+/android/app/profile
+/android/app/release
+/android/.gradle/
+/android/.idea/
+/android/.kotlin/
+/android/local.properties
+/android/app/local.properties
+/android/app/.cxx/
+/android/app/.gradle/
+**/android/**/local.properties
+
+# ─── iOS ─────────────────────────────────────────────────
+/ios/Pods/
+/ios/.symlinks/
+/ios/Flutter/Flutter.framework
+/ios/Flutter/Flutter.podspec
+/ios/Flutter/ephemeral/
+/ios/Flutter/Generated.xcconfig
+/ios/Flutter/flutter_export_environment.sh
+
+# ─── Windows / Linux / macOS build ───────────────────────────
+/windows/flutter/ephemeral/
+/linux/flutter/ephemeral/
+/macos/Flutter/ephemeral/
+
+# ─── Web build artifacts ────────────────────────────────────
+/web/.dart_tool/
+
+# ─── ML Model Training Artifacts (large files) ──────────────
+/models/
+/tf_saved_model/
+*.pth
+*.onnx
+*.pt
+*.h5
+*.pb
+!assets/models/*.tflite
+cona.zip
+train.ipynb
+
+# ─── Testing / Debugging / Scratch Files ────────────────────
+test.txt
+test2.txt
+test_gemini.dart
+test_model.py
+test_float16.py
+test_norm.py
+test_hierarchy.py
+check_flex.py
+convert.py
+investigate_model.py
+*_out.txt
+*_output.txt
+build_log.txt
+ops.txt
+
+# ─── Setup / Documentation (dev-only) ───────────────────────
+ANDROID_EMULATOR_SETUP.md
+ANDROID_SETUP_GUIDE.md
+ERROR_FIXES.md
+FIXED_DEPENDENCIES.md
+RUN_IN_CHROME.md
+SETUP_GUIDE.md
+
+# ─── Root-level image assets (non-app icons) ────────────────
+/Icon-192.png
+/Icon-512.png
+/Icon-maskable-192.png
+/Icon-maskable-512.png
+/favicon.png
+/ic_launcher.png
+/launch_image.png
+
+# ─── Duplicate data files at root ────────────────────────────
+/class_labels.json
+
+# ─── Nested build directories ───────────────────────────────
+/cona/

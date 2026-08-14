@@ -1,0 +1,58 @@
+name: plant_disease_detector
+description: A Flutter app for detecting plant diseases using AI and providing expert guidance.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '^3.9.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI and Design
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.9
+  lottie: ^2.7.0
+  
+  # TensorFlow Lite for Android
+  tflite_flutter: ^0.11.0
+  
+  # Image handling
+  image_picker: ^1.0.4
+  camera: ^0.11.2
+  path_provider: ^2.1.1
+  image: ^3.3.0
+  
+  # HTTP and API
+  http: ^1.6.0
+  dio: ^5.3.2
+  
+  # State Management
+  provider: ^6.1.1
+  
+  # AI and ML
+  google_generative_ai: ^0.4.7
+  
+  # Permissions
+  permission_handler: ^12.0.1
+  geolocator: ^14.0.2
+  google_mlkit_image_labeling: ^0.14.2
+  flutter_dotenv: ^6.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.2
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - .env
+    - assets/models/
+    - assets/images/
+    - assets/animations/
