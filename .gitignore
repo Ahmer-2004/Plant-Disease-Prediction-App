@@ -94,7 +94,6 @@ app.*.map.json
 *.pb
 !assets/models/*.tflite
 cona.zip
-train.ipynb
 
 # ─── Testing / Debugging / Scratch Files ────────────────────
 test.txt
